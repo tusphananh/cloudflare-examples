@@ -1,0 +1,142 @@
+{
+  "MeMetrics": {
+    "LocationDescription": "Select your preferred area: District 1, District 2, District 3, ..."
+  },
+  "CreateGame": {
+    "Date": {
+      "Label": "Booking Date",
+      "Placeholder": "Pick game date"
+    }
+  },
+  "Booking": {
+    "Slots": {
+      "Label": "Select time slots",
+      "Placeholder": "Select time slots"
+    }
+  },
+  "CreateTable": {
+    "CreateMany": "Create many tables"
+  },
+  "FindPlayground": {
+    "Bookable": {
+      "Label": "Book a playground"
+    },
+    "Date": {
+      "Label": "Booking Date",
+      "Placeholder": "Pick a date"
+    }
+  },
+  "Login": {
+    "Description": "Enter your information.",
+    "Email": {
+      "Label": "Email",
+      "Placeholder": "example@gmail.com"
+    },
+    "ForgotPassword": "Forgot Password?",
+    "Password": {
+      "Label": "Password",
+      "Placeholder": "********"
+    },
+    "RegisterNow": "Sign up now",
+    "Submit": "Login",
+    "Title": "Login"
+  },
+  "Optional": "Optional",
+  "Register": {
+    "ConfirmPassword": {
+      "Label": "Confirm Password"
+    },
+    "Description": "Complete your information.",
+    "Email": {
+      "Label": "Email",
+      "Placeholder": "example@gmail.com"
+    },
+    "FirstName": {
+      "Label": "First Name",
+      "Placeholder": "John"
+    },
+    "LastName": {
+      "Label": "Last Name",
+      "Placeholder": "Doe"
+    },
+    "Password": {
+      "Label": "Password",
+      "Placeholder": "********"
+    },
+    "Phone": {
+      "Label": "Phone Number",
+      "Placeholder": "000-000-0000"
+    },
+    "Submit": "Register",
+    "Title": "Register"
+  },
+  "RegisterBetaCustomer": {
+    "PeopleRegistered": "People registered",
+    "ThankYou": "Thank you for your interest in our service, we will contact you soon!"
+  },
+  "ProposePlayground": {
+    "CheckExisting": "Check existing playgrounds",
+    "SearchExisting": "Name or address",
+    "ThankYou": "Thank you for your suggestion!",
+    "Type": {
+      "Placeholder": "Select sport type"
+    }
+  },
+  "EditProfile": {
+    "Bio": {
+      "Label": "Bio",
+      "Placeholder": "Football for life!"
+    },
+    "Username": {
+      "Label": "Username",
+      "Placeholder": "john_doe"
+    },
+    "Dob": {
+      "Label": "Date of Birth",
+      "Placeholder": "Pick a date"
+    },
+    "Gender": {
+      "Label": "Gender",
+      "Placeholder": "Choose your gender"
+    },
+    "PreferredLocation": {
+      "Label": "Preferred Location",
+      "Placeholder": "Select a location you prefer"
+    },
+    "Email": {
+      "Label": "Email",
+      "Placeholder": "example@gmail.com"
+    },
+    "Phone": {
+      "Label": "Phone Number",
+      "Placeholder": "0123456789"
+    }
+  },
+  "ForgetPassword": {
+    "Title": "Forget Password",
+    "Description": "Enter your email to reset password.",
+    "Email": {
+      "Label": "Email",
+      "Placeholder": "example@gmail.com"
+    },
+    "Submit": "Submit",
+    "Success": "An email has been sent to your email address. Please check your inbox.",
+    "BackToLogin": "Back to login"
+  },
+  "ResetPassword": {
+    "Title": "Reset Your Password",
+    "Description": "Enter your new password.",
+    "Password": {
+      "Label": "Password",
+      "Placeholder": "********"
+    },
+    "ConfirmPassword": {
+      "Label": "Confirm Password"
+    },
+    "Token": {
+      "Required": "Token invalid"
+    },
+    "Submit": "Submit",
+    "Success": "Reset password success. You will be redirected to the login page."
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "MeMetrics": {
+    "LocationDescription": "Chọn khu vực bạn thường chơi thể thao: Quận 1, Quận 2, Quận 3, ..."
+  },
+  "CreateGame": {
+    "Date": {
+      "Label": "Ngày đặt",
+      "Placeholder": "Chọn ngày chơi"
+    }
+  },
+  "Booking": {
+    "Slots": {
+      "Label": "Chọn khung giờ",
+      "Placeholder": "Chọn khung giờ"
+    }
+  },
+  "CreateTable": {
+    "CreateMany": "Tạo nhiều bàn"
+  },
+  "FindPlayground": {
+    "Bookable": {
+      "Label": "Đặt sân"
+    },
+    "Date": {
+      "Label": "Ngày đặt",
+      "Placeholder": "Chọn ngày đặt"
+    }
+  },
+  "Login": {
+    "Description": "Đăng nhập vào tài khoản của bạn",
+    "Email": {
+      "Label": "Email",
+      "Placeholder": "nguyenvana@gmail.com"
+    },
+    "ForgotPassword": "Quên mật khẩu?",
+    "Password": {
+      "Label": "Mật khẩu",
+      "Placeholder": "********"
+    },
+    "Register": "Đăng ký tài khoản mới",
+    "Submit": "Đăng nhập",
+    "Title": "Đăng nhập"
+  },
+  "Optional": "Không bắt buộc",
+  "Register": {
+    "ConfirmPassword": {
+      "Label": "Xác nhận mật khẩu"
+    },
+    "Description": "Đăng ký tài khoản mới",
+    "Email": {
+      "Label": "Email",
+      "Placeholder": "nguyenvana@gmail.com"
+    },
+    "FirstName": {
+      "Label": "Tên",
+      "Placeholder": "Nguyễn"
+    },
+    "LastName": {
+      "Label": "Họ",
+      "Placeholder": "Văn A"
+    },
+    "Password": {
+      "Label": "Mật khẩu",
+      "Placeholder": "********"
+    },
+    "Phone": {
+      "Label": "Số điện thoại",
+      "Placeholder": "0912345678"
+    },
+    "Submit": "Đăng ký",
+    "Title": "Đăng ký"
+  },
+  "RegisterBetaCustomer": {
+    "PeopleRegistered": "Người đã đăng ký",
+    "ThankYou": "Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ với bạn sớm nhất có thể."
+  },
+  "ProposePlayground": {
+    "CheckExisting": "Kiểm tra sân đã có",
+    "SearchExisting": "Tên hoặc địa chỉ",
+    "ThankYou": "Cảm ơn vì đề xuất của bạn!",
+    "Type": {
+      "Placeholder": "Chọn môn thể thao"
+    }
+  },
+  "EditProfile": {
+    "Bio": {
+      "Label": "Bio",
+      "Placeholder": "Đá banh chứ không đánh ba!"
+    },
+    "Username": {
+      "Label": "Username",
+      "Placeholder": "a@nguyen2k"
+    },
+    "Dob": {
+      "Label": "Ngày sinh",
+      "Placeholder": "Chọn ngày sinh"
+    },
+    "Gender": {
+      "Label": "Giới tính",
+      "Placeholder": "Chọn giới tính"
+    },
+    "PreferredLocation": {
+      "Label": "Địa điểm ưa thích",
+      "Placeholder": "Chọn địa điểm ưa thích"
+    },
+    "Phone": {
+      "Label": "Số điện thoại",
+      "Placeholder": "0912345678"
+    },
+    "Email": {
+      "Label": "Email",
+      "Placeholder": "nguyenvana@gmail.com"
+    }
+  },
+  "ForgetPassword": {
+    "Title": "Quên mật khẩu",
+    "Description": "Nhập email của bạn để lấy lại mật khẩu",
+    "Email": {
+      "Label": "Email",
+      "Placeholder": "nguyenvana@gmail.com"
+    },
+    "Submit": "Gửi yêu cầu",
+    "Success": "Yêu cầu đã được gửi, vui lòng kiểm tra email của bạn",
+    "BackToLogin": "Quay lại trang đăng nhập"
+  },
+  "ResetPassword": {
+    "Title": "Đặt lại mật khẩu",
+    "Description": "Nhập mật khẩu mới của bạn",
+    "Password": {
+      "Label": "Mật khẩu mới",
+      "Placeholder": "********"
+    },
+    "ConfirmPassword": {
+      "Label": "Xác nhận mật khẩu"
+    },
+    "Token": {
+      "Required": "Mã xác nhận không hop lệ"
+    },
+    "Submit": "Đặt lại mật khẩu",
+    "Success": "Đặt lại mật khẩu thành công. Bạn sẽ được đưa đến trang đăng nhập trong vài giây."
+  }
+}

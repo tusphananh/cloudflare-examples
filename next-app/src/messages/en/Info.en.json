@@ -1,0 +1,142 @@
+{
+  "Auth": {
+    "Slogan": "Start your journey with"
+  },
+  "Booking": {
+    "ScamPhone": "Playground is not affiliated with Choiee, verify information before payment"
+  },
+  "DateTime": {
+    "ADayAgo": "1 day ago",
+    "AHourAgo": "1 hour ago",
+    "AHourLater": "A hour later",
+    "AMinuteAgo": "1 minute ago",
+    "AMonthAgo": "1 month ago",
+    "ANextMonth": "Next month",
+    "ANextWeek": "Next week",
+    "AnHourAgo": "1 hour ago",
+    "AWeekAgo": "1 week ago",
+    "DaysAgo": "{number} days ago",
+    "DaysLater": "{number} days later",
+    "HoursAgo": "{number} hours ago",
+    "HoursLater": "{number} hours later",
+    "JustNow": "Just now",
+    "LastMonth": "Last month",
+    "LastWeek": "Last week",
+    "MinutesAgo": "{number} minutes ago",
+    "MinutesLater": "{number} minutes later",
+    "MonthsAgo": "{number} months ago",
+    "MonthsLater": "{number} months later",
+    "Today": "Today",
+    "Tomorrow": "Tomorrow",
+    "WeeksAgo": "{number} weeks ago",
+    "WeeksLater": "{number} weeks later",
+    "Yesterday": "Yesterday"
+  },
+  "DescriptionsForLevel": {
+    "BADMINTON": {
+      "ADVANCED": "Has participated in local tournaments;",
+      "BEGINNER": "Familiar with the rules; Understands basic techniques, but execution is not good;",
+      "INTERMEDIATE": "Knows the rules well; Technique: 60 - 70% (cannot execute a clear shot or it is not precise);",
+      "PRO": "On a team, has achievements in local tournaments;",
+      "ROOKIE": "Beginner; Not fully aware of the rules; No basic skills (only knows how to hit back and forth);",
+      "UPPER_INTERMEDIATE": "Knows the rules well; Technique: 60 - 70% (good shot execution, correct technique);"
+    },
+    "BASKETBALL": {
+      "ADVANCED": "Participates in local/semi-professional tournaments & achieves high rankings;",
+      "BEGINNER": "Participates once a week; Knows the rules and basic skills;",
+      "INTERMEDIATE": "Maintains training, 2-3 times a week;",
+      "PRO": "Participates in training & competes in professional tournaments;",
+      "ROOKIE": "Just starting, rarely participates; Unfamiliar with the rules & basic skills;",
+      "UPPER_INTERMEDIATE": "Regularly trains 4-6 times a week;"
+    },
+    "BILLIARD": {
+      "ADVANCED": "Participates in local/semi-professional tournaments & achieves high rankings;",
+      "BEGINNER": "Participates once a week; Knows the rules and basic skills;",
+      "INTERMEDIATE": "Maintains training, 2-3 times a week;",
+      "PRO": "Participates in training & competes in professional tournaments;",
+      "ROOKIE": "Just starting, rarely participates; Unfamiliar with the rules & basic skills;",
+      "UPPER_INTERMEDIATE": "Regularly trains 4-6 times a week;"
+    },
+    "OTHER": {
+      "ADVANCED": "Participates in local/semi-professional tournaments & achieves high rankings;",
+      "BEGINNER": "Participates once a week; Knows the rules and basic skills;",
+      "INTERMEDIATE": "Maintains training, 2-3 times a week;",
+      "PRO": "Participates in training & competes in professional tournaments;",
+      "ROOKIE": "Just starting, rarely participates; Unfamiliar with the rules & basic skills;",
+      "UPPER_INTERMEDIATE": "Regularly trains 4-6 times a week;"
+    },
+    "PICKLEBALL": {
+      "ADVANCED": "Level 4.0 (Advanced player); Forehand, Backhand, Serving/Returning: all well-developed; Dink: recognizes attack situations, stable and more developed but only at the level of recognizing which shots to attack and which not to; Third shot: knows how to combine light and strong hitting to create advantages; Volley: can hit at various speeds, understands Block/Reset Volley; Strategy: can move fluidly and effectively in doubles, understands and applies stacking strategy well, can analyze and exploit opponents' weaknesses;",
+      "BEGINNER": "Level 2.5; Has played a few matches, can play short rallies with peers; Basic skills, can score and maintain game pace;",
+      "INTERMEDIATE": "Level 3.0; Forehand: average hitting speed, lacks direction and consistency; Weak backhand technique; Serving/Returning at an average level (serves not deep enough, lacks direction and consistency); Dink is unstable due to poor control; Third shot not stable; Volley: lacks proper direction; Strategy: has basic understanding of hitting power and movement strategy;",
+      "PRO": "Level 4.5 - 5.5 (Advanced to professional player); Forehand: consistent and powerful; Backhand: effective control; Serve: strong, accurate, can change speed; Dink: skilled and patient; Third shot: purposeful hitting; Volley: good blocking ability and continuous execution; Strategy: understands strategies well, can analyze and effectively attack opponents' weaknesses;",
+      "ROOKIE": "Level 1.0 - 2.0; Just starting; Minimal knowledge of the rules; No skill foundation;",
+      "UPPER_INTERMEDIATE": "Level 3.5; Forehand: good control in most hits; Backhand: stable form and shot direction, but still relies on forehand; Serving/Returning: confident in serving without errors but not fully utilizing each shot's advantage; Can maintain a Dink rally with average duration and starting to understand different speed variations, e.g., when to accelerate to attack; Can utilize the third shot to create opportunities to attack at the net; Volley: improved from level 3.0; Strategy: notable development, can predict and move quickly to the Non-Volley zone when opportunities arise, knows how to position better in various situations, has basic knowledge of stacking strategy in doubles;"
+    },
+    "SOCCER": {
+      "ADVANCED": "Participates in local/semi-professional tournaments & achieves high rankings;",
+      "BEGINNER": "Participates once a week; Knows the rules and basic skills;",
+      "INTERMEDIATE": "Maintains training, 2-3 times a week;",
+      "PRO": "Participates in training & competes in professional tournaments;",
+      "ROOKIE": "Just starting, rarely participates; Unfamiliar with the rules & basic skills;",
+      "UPPER_INTERMEDIATE": "Regularly trains 4-6 times a week;"
+    },
+    "TABLE_TENNIS": {
+      "ADVANCED": "Participates in local/semi-professional tournaments & achieves high rankings;",
+      "BEGINNER": "Participates once a week; Knows the rules and basic skills;",
+      "INTERMEDIATE": "Maintains training, 2-3 times a week;",
+      "PRO": "Participates in training & competes in professional tournaments;",
+      "ROOKIE": "Just starting, rarely participates; Unfamiliar with the rules & basic skills;",
+      "UPPER_INTERMEDIATE": "Regularly trains 4-6 times a week;"
+    },
+    "TENNIS": {
+      "ADVANCED": "Has participated in local tournaments;",
+      "BEGINNER": "Familiar with the rules; Understands basic techniques, but execution is not good;",
+      "INTERMEDIATE": "Knows the rules well; Technique: 60 - 70% (cannot execute a clear shot or it is not precise);",
+      "PRO": "On a team, has achievements in local tournaments;",
+      "ROOKIE": "Beginner; Not fully aware of the rules; No basic skills (only knows how to hit back and forth);",
+      "UPPER_INTERMEDIATE": "Knows the rules well; Technique: 60 - 70% (good shot execution, correct technique);"
+    },
+    "VOLLEYBALL": {
+      "ADVANCED": "Participates in local/semi-professional tournaments & achieves high rankings;",
+      "BEGINNER": "Participates once a week; Knows the rules and basic skills;",
+      "INTERMEDIATE": "Maintains training, 2-3 times a week;",
+      "PRO": "Participates in training & competes in professional tournaments;",
+      "ROOKIE": "Just starting, rarely participates; Unfamiliar with the rules & basic skills;",
+      "UPPER_INTERMEDIATE": "Regularly trains 4-6 times a week;"
+    }
+  },
+  "Donate": {
+    "DeeplyAppreciate": "We deeply appreciate your donation",
+    "Thanks": "Thank you for considering us!"
+  },
+  "Feature": {
+    "Unsupported": "Choiee has not supported this feature yet, contact us for more information."
+  },
+  "Home": {
+    "DonateDescription": "Really need our solution? Consider donating to Choiee",
+    "Slide": {
+      "0": {
+        "Emphasis": "at ease",
+        "Text": "Join & host sports games"
+      },
+      "1": {
+        "Emphasis": "Swipe to find",
+        "Text": "suitable games"
+      },
+      "2": {
+        "Emphasis": "Create and manage",
+        "Text": "your games"
+      },
+      "3": {
+        "Emphasis": "Build your own",
+        "Text": "sports profile"
+      }
+    },
+    "Slogan": "Let's Play, has Choiee"
+  },
+  "Notification": {
+    "AllowNotificationDescription": "Allow notification to receive the latest updates from Choiee"
+  },
+  "Remains": "Remains"
+}

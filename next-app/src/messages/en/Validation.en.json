@@ -1,0 +1,95 @@
+{
+  "Required": "This field is required",
+  "Address": {
+    "MaxLength": "Address must be at most {number} characters",
+    "MinLength": "Address must be at least {number} characters",
+    "Required": "Address is required"
+  },
+  "ConfirmPassword": {
+    "Mismatch": "Passwords are mismatch",
+    "Required": "Confirm password is required"
+  },
+  "Email": {
+    "Invalid": "Email is invalid",
+    "Required": "Email is required"
+  },
+  "FirstName": {
+    "MinLength": "First Name must be at least {number} characters",
+    "Required": "First Name is required",
+    "MaxLength": "First Name must be at most {number} characters"
+  },
+  "LastName": {
+    "MinLength": "Last Name must be at least {number} characters",
+    "Required": "Last Name is required",
+    "MaxLength": "Last Name must be at most {number} characters"
+  },
+  "Name": {
+    "MaxLength": "Name must be at most {number} characters",
+    "MinLength": "Name must be at least {number} characters",
+    "Required": "Name is required"
+  },
+  "Password": {
+    "MaxLength": "Password must be at most {number} characters",
+    "MinLength": "Password must be at least {number} characters",
+    "Mismatch": "Passwords are mismatch",
+    "Required": "Password is required"
+  },
+  "Phone": {
+    "Invalid": "Phone number is invalid",
+    "Required": "Phone number is required"
+  },
+  "Price": {
+    "Min": "Price must be at least {number}",
+    "Required": "Price is required"
+  },
+  "ProposePlayground": {
+    "Type": {
+      "Required": "Playground type is required"
+    }
+  },
+  "MoneyAmount": {
+    "Required": "Money amount is required",
+    "Invalid": "Money amount is invalid",
+    "Positive": "Money amount must be positive",
+    "Int": "Money amount must be an integer"
+  },
+  "FindPlayground": {
+    "Type": {
+      "Required": "Please select a sport type"
+    },
+    "Radius": {
+      "Min": "Radius must be greater than {number} m",
+      "Max": "Radius must be smaller than {number} m"
+    }
+  },
+  "Booking": {
+    "Slots": {
+      "Invalid": "Invalid slot"
+    }
+  },
+  "Username": {
+    "Invalid": "Username is invalid",
+    "MinLength": "Username must be at least {number} characters",
+    "Required": "Username is required",
+    "MaxLength": "Username must be at most {number} characters"
+  },
+  "Bio": {
+    "Required": "Bio is required",
+    "MaxLength": "Bio must be at most {number} characters",
+    "MinLength": "Bio must be at least {number} characters"
+  },
+  "Dob": {
+    "Required": "Date of birth is required",
+    "Invalid": "Date of birth is invalid"
+  },
+  "CoorUnit": {
+    "Required": "Coordinate unit is required",
+    "Min": "Coordinate unit must be greater than {number}",
+    "Max": "Coordinate unit must be smaller than {number}"
+  },
+  "Gender": "Gender is required",
+  "Location": "Location is required",
+  "Token": {
+    "Required": "Token is invalid"
+  }
+}

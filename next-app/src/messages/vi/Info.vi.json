@@ -1,0 +1,142 @@
+{
+  "Auth": {
+    "Slogan": "Bắt đầu với"
+  },
+  "Booking": {
+    "ScamPhone": "Sân chơi không liên kết với Choiee, kiểm tra thông tin trước khi thanh toán"
+  },
+  "DateTime": {
+    "ADayAgo": "1 ngày trước",
+    "AHourAgo": "1 giờ trước",
+    "AHourLater": "1 giờ sau",
+    "AMinuteAgo": "1 phút trước",
+    "AMonthAgo": "1 tháng trước",
+    "ANextMonth": "Tháng sau",
+    "ANextWeek": "Tuần sau",
+    "AnHourAgo": "1 giờ trước",
+    "AWeekAgo": "1 tuần trước",
+    "DaysAgo": "{number} ngày trước",
+    "DaysLater": "{number} ngày sau",
+    "HoursAgo": "{number} giờ trước",
+    "HoursLater": "{number} giờ sau",
+    "JustNow": "Vừa xong",
+    "LastMonth": "Tháng trước",
+    "LastWeek": "Tuần trước",
+    "MinutesAgo": "{number} phút trước",
+    "MinutesLater": "{number} phút sau",
+    "MonthsAgo": "{number} tháng trước",
+    "MonthsLater": "{number} tháng sau",
+    "Today": "Hôm nay",
+    "Tomorrow": "Ngày mai",
+    "WeeksAgo": "{number} tuần trước",
+    "WeeksLater": "{number} tuần sau",
+    "Yesterday": "Hôm qua"
+  },
+  "DescriptionsForLevel": {
+    "BADMINTON": {
+      "ADVANCED": "Từng đánh giải phong trào;",
+      "BEGINNER": "Rành luật; Nắm được kỹ thuật cơ bản, nhưng triển khai chưa tốt;",
+      "INTERMEDIATE": "Nắm rõ luật; Kỹ thuật: 60 - 70% (chưa ve được hoặc ve chưa chuẩn);",
+      "PRO": "Đội tuyển, có thành tích các giải phong trào;",
+      "ROOKIE": "Vỡ lòng; Chưa biết luật 100%; Chưa có kỹ năng cơ bản (chỉ biết đánh qua lại);",
+      "UPPER_INTERMEDIATE": "Nắm rõ luật; Kỹ thuật: 60 - 70% (ve cầu tốt, đúng kỹ thuật);"
+    },
+    "BASKETBALL": {
+      "ADVANCED": "Tham gia các giải phong trào/ bán chuyên & đạt các thứ hạng cao;",
+      "BEGINNER": "Mỗi tuần tham gia 1 buổi; Biết luật và các kỹ năng cơ bản;",
+      "INTERMEDIATE": "Tập luyện duy trì, 2-3 buổi tuần;",
+      "PRO": "Tham gia tập luyện & thi đấu các giải đấu chuyên nghiệp;",
+      "ROOKIE": "Mới tập, lâu lâu mới tham gia 1 buổi; Không rõ luật & các kỹ năng cơ bản;",
+      "UPPER_INTERMEDIATE": "Đều đặn 4-6 buổi mỗi tuần;"
+    },
+    "BILLIARD": {
+      "ADVANCED": "Tham gia các giải phong trào/ bán chuyên & đạt các thứ hạng cao;",
+      "BEGINNER": "Mỗi tuần tham gia 1 buổi; Biết luật và các kỹ năng cơ bản;",
+      "INTERMEDIATE": "Tập luyện duy trì, 2-3 buổi tuần;",
+      "PRO": "Tham gia tập luyện & thi đấu các giải đấu chuyên nghiệp;",
+      "ROOKIE": "Mới tập, lâu lâu mới tham gia 1 buổi; Không rõ luật & các kỹ năng cơ bản;",
+      "UPPER_INTERMEDIATE": "Đều đặn 4-6 buổi mỗi tuần;"
+    },
+    "OTHER": {
+      "ADVANCED": "Tham gia các giải phong trào/ bán chuyên & đạt các thứ hạng cao;",
+      "BEGINNER": "Mỗi tuần tham gia 1 buổi; Biết luật và các kỹ năng cơ bản;",
+      "INTERMEDIATE": "Tập luyện duy trì, 2-3 buổi tuần;",
+      "PRO": "Tham gia tập luyện & thi đấu các giải đấu chuyên nghiệp;",
+      "ROOKIE": "Mới tập, lâu lâu mới tham gia 1 buổi; Không rõ luật & các kỹ năng cơ bản;",
+      "UPPER_INTERMEDIATE": "Đều đặn 4-6 buổi mỗi tuần;"
+    },
+    "PICKLEBALL": {
+      "ADVANCED": "Mức độ 4.0 (Người chơi nâng cao); Forehand, Backhand, Giao/đỡ giao bóng: Đều hoàn thiện; Dink: Nhận biết tình huống tấn công, ổn định và phát triển hơn, nhưng chỉ ở mức nhận ra pha bóng nào có thể tận dụng để tấn công và những pha không nên tấn công; Cú đánh thứ 3: Biết kết hợp đánh nhẹ và mạnh để tạo lợi thế; Volley: đánh được ở nhiều tốc độ khác nhau, hiểu Block/Reset Volley; Chiến thuật: Có thể di chuyển nhuần nhuyễn và hiệu quả khi đánh đôi, hiểu rõ và ứng dụng tốt chiến thuật xếp hàng (Stacking), có khả năng phân tích và khai thác tấn công điểm yếu của đối thủ;",
+      "BEGINNER": "Mức độ 2.5; Đã từng chơi qua một vài trận đấu, có thể chơi được một vài lượt bóng ngắn với người cùng trình độ; Kỹ năng cơ bản, có thể ghi điểm và duy trì nhịp độ trận đấu;",
+      "INTERMEDIATE": "Mức độ 3.0; Forehand: tốc độ đánh trung bình, chưa định hướng được đường bóng và thiếu sự nhất quán giữa các cú đánh; Kỹ thuật backhand còn yếu; Giao/Đỡ giao bóng ở mức trung bình (Giao bóng còn chưa sâu vào cuối sân, thiếu định hướng và sự nhất quán giữa các cú giao bóng); Dink chưa ổn định do chưa kiểm soát tốt; Cú đánh bóng thứ 3 chưa ổn định; Volley: chưa định hướng đúng theo ý muốn; Chiến thuật: đã hiểu cơ bản về lực đánh và chiến lược di chuyển;",
+      "PRO": "Mức độ 4.5 - 5.5 (Người chơi cao cấp đến chuyên nghiệp); Forehand: Nhất quán và mạnh mẽ; Backhand: Điều khiển hiệu quả; Giao bóng: Lực mạnh, chính xác, có thể thay đổi tốc độ; Dink: Thành thạo và kiên nhẫn; Cú đánh thứ 3: Đánh có chủ đích; Volley: Khả năng chặn tốt và thực hiện liên tục; Chiến thuật: Nắm vững chiến lược, có thể phân tích và tấn công hiệu quả điểm yếu của đối thủ;",
+      "ROOKIE": "Mức độ 1.0 - 2.0; Người mới bắt đầu chơi; Hiểu biết tối thiểu về luật chơi; Chưa có nền tảng kỹ năng;",
+      "UPPER_INTERMEDIATE": "Mức độ 3.5; Forehand: hoàn thiện tốt forehand, kiểm soát ở mức khá trong đa số cú đánh; Backhand: form đánh chuẩn và đường bóng ổn định, tuy nhiên vẫn còn sử dụng forehand nhiều; Giao/Đỡ giao bóng: Tự tin giao bóng liên tục không lỗi nhưng chưa tận dụng hết lợi thế trong từng đường bóng; Có thể duy trì một lượt Dink với thời gian trung bình và bắt đầu hiểu về các biến thể tốc độ khác nhau, ví dụ như là khi nào cần thực hiện cú tăng tốc để có thể tấn công đối thủ; Có thể tận dụng Cú đánh bóng thứ 3 để tạo cơ hội bước lên lưới tấn công; Volley: có sự cải thiện so với độ 3;0; Chiến thuật: Phát triển rõ rệt, có khả năng phán đoán và di chuyển nhanh đến khu vực Non-Volley ngay khi có cơ hội để tận dụng lợi thế, biết chọn vị trí đứng phù hợp hơn trong từng tình huống, có kiến thức cơ bản về chiến thuật xếp hàng (Stacking) đối với đánh đôi;"
+    },
+    "SOCCER": {
+      "ADVANCED": "Tham gia các giải phong trào/ bán chuyên & đạt các thứ hạng cao;",
+      "BEGINNER": "Mỗi tuần tham gia 1 buổi; Biết luật và các kỹ năng cơ bản;",
+      "INTERMEDIATE": "Tập luyện duy trì, 2-3 buổi tuần;",
+      "PRO": "Tham gia tập luyện & thi đấu các giải đấu chuyên nghiệp;",
+      "ROOKIE": "Mới tập, lâu lâu mới tham gia 1 buổi; Không rõ luật & các kỹ năng cơ bản;",
+      "UPPER_INTERMEDIATE": "Đều đặn 4-6 buổi mỗi tuần;"
+    },
+    "TABLE_TENNIS": {
+      "ADVANCED": "Tham gia các giải phong trào/ bán chuyên & đạt các thứ hạng cao;",
+      "BEGINNER": "Mỗi tuần tham gia 1 buổi; Biết luật và các kỹ năng cơ bản;",
+      "INTERMEDIATE": "Tập luyện duy trì, 2-3 buổi tuần;",
+      "PRO": "Tham gia tập luyện & thi đấu các giải đấu chuyên nghiệp;",
+      "ROOKIE": "Mới tập, lâu lâu mới tham gia 1 buổi; Không rõ luật & các kỹ năng cơ bản;",
+      "UPPER_INTERMEDIATE": "Đều đặn 4-6 buổi mỗi tuần;"
+    },
+    "TENNIS": {
+      "ADVANCED": "Từng đánh giải phong trào;",
+      "BEGINNER": "Rành luật; Nắm được kỹ thuật cơ bản, nhưng triển khai chưa tốt;",
+      "INTERMEDIATE": "Nắm rõ luật; Kỹ thuật: 60 - 70% (chưa ve được hoặc ve chưa chuẩn);",
+      "PRO": "Đội tuyển, có thành tích các giải phong trào;",
+      "ROOKIE": "Vỡ lòng; Chưa biết luật 100%; Chưa có kỹ năng cơ bản (chỉ biết đánh qua lại);",
+      "UPPER_INTERMEDIATE": "Nắm rõ luật; Kỹ thuật: 60 - 70% (ve cầu tốt, đúng kỹ thuật);"
+    },
+    "VOLLEYBALL": {
+      "ADVANCED": "Tham gia các giải phong trào/ bán chuyên & đạt các thứ hạng cao;",
+      "BEGINNER": "Mỗi tuần tham gia 1 buổi; Biết luật và các kỹ năng cơ bản;",
+      "INTERMEDIATE": "Tập luyện duy trì, 2-3 buổi tuần;",
+      "PRO": "Tham gia tập luyện & thi đấu các giải đấu chuyên nghiệp;",
+      "ROOKIE": "Mới tập, lâu lâu mới tham gia 1 buổi; Không rõ luật & các kỹ năng cơ bản;",
+      "UPPER_INTERMEDIATE": "Đều đặn 4-6 buổi mỗi tuần;"
+    }
+  },
+  "Donate": {
+    "DeeplyAppreciate": "Chúng tôi rất trân trọng sự ủng hộ của bạn",
+    "Thanks": "Cảm ơn bạn đã ủng hộ Choiee"
+  },
+  "Feature": {
+    "Unsupported": "Choiee chưa hỗ trợ chức năng này. Vui lòng liên hệ với chúng tôi để nâng cấp gói dịch vụ."
+  },
+  "Home": {
+    "DonateDescription": "Hãy ủng hộ chúng tôi để chúng tôi có thêm động lực phát triển hơn nữa!",
+    "Slide": {
+      "0": {
+        "Emphasis": "thật dễ",
+        "Text": "Tham gia & tổ chức trận đấu"
+      },
+      "1": {
+        "Emphasis": "Vuốt để tìm",
+        "Text": "trận đấu phù hợp"
+      },
+      "2": {
+        "Emphasis": "Tạo và quản lý",
+        "Text": "trận đấu của bạn"
+      },
+      "3": {
+        "Emphasis": "Cá nhân hoá",
+        "Text": "hồ sơ thể thao"
+      }
+    },
+    "Slogan": "Đặt sân đi, có Choiee!"
+  },
+  "Notification": {
+    "AllowNotificationDescription": "Cho phép Choiee gửi thông báo để bạn không bỏ lỡ bất kỳ trận đấu nào"
+  },
+  "Remains": "Còn lại"
+}

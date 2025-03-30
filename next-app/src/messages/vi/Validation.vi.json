@@ -1,0 +1,95 @@
+{
+  "Required": "Trường này không được để trống",
+  "Address": {
+    "MaxLength": "Địa chỉ tối đa {number} ký tự",
+    "MinLength": "Địa chỉ ít nhất {number} ký tự",
+    "Required": "Địa chỉ không được để trống"
+  },
+  "ConfirmPassword": {
+    "Mismatch": "Mật khẩu không trùng khớp",
+    "Required": "Xác nhận mật khẩu không được để trống"
+  },
+  "Email": {
+    "Invalid": "Email không hơp lệ",
+    "Required": "Email không được để trống"
+  },
+  "FirstName": {
+    "MinLength": "Tên ít nhất {number} ký tự",
+    "MaxLength": "Tên tối đa {number} ký tự",
+    "Required": "Tên không được để trống"
+  },
+  "LastName": {
+    "MinLength": "Họ ít nhất {number} ký tự",
+    "MaxLength": "Họ tối đa {number} ký tự",
+    "Required": "Họ không được để trống"
+  },
+  "Name": {
+    "MaxLength": "Tên tối đa {number} ký tự",
+    "MinLength": "Tên ít nhất {number} ký tự",
+    "Required": "Tên không được để trống"
+  },
+  "Password": {
+    "MaxLength": "Mật khẩu tối đa {number} ký tự",
+    "MinLength": "Mật khẩu ít nhất {number} ký tự",
+    "Mismatch": "Mật khẩu không trùng khớp",
+    "Required": "Mật khẩu không được để trống"
+  },
+  "Phone": {
+    "Invalid": "Số điện thoại không hợp lệ",
+    "Required": "Số điện thoại không được để trống"
+  },
+  "Price": {
+    "Min": "Giá ít nhất {number}",
+    "Required": "Giá không được để trống"
+  },
+  "ProposePlayground": {
+    "Type": {
+      "Required": "Loại sân không được để trống"
+    }
+  },
+  "MoneyAmount": {
+    "Required": "Số tiền không được để trống",
+    "Invalid": "Số tiền không hợp lệ",
+    "Positive": "Số tiền phải lớn hơn 0",
+    "Int": "Số tiền phải là số nguyên"
+  },
+  "FindPlayground": {
+    "Type": {
+      "Required": "Loại thể thao không được để trống"
+    },
+    "Radius": {
+      "Min": "Bán kính tìm kiếm phải lớn hơn {number} m",
+      "Max": "Bán kính tìm kiếm phải nhỏ hơn {number} m"
+    }
+  },
+  "Booking": {
+    "Slots": {
+      "Invalid": "Thời gian không hợp lệ"
+    }
+  },
+  "Gender": "Giới tính không được để trống",
+  "Location": "Vị trí không được để trống",
+  "Username": {
+    "Invalid": "Tên đăng nhập không hợp lệ",
+    "Required": "Tên đăng nhập không được để trống",
+    "MinLength": "Tên đăng nhập ít nhất {number} ký tự",
+    "MaxLength": "Tên đăng nhập tối đa {number} ký tự"
+  },
+  "Bio": {
+    "Required": "Bio không được để trống",
+    "MinLength": "Bio ít nhất {number} ký tự",
+    "MaxLength": "Bio tối đa {number} ký tự"
+  },
+  "Dob": {
+    "Required": "Ngày sinh không được để trống",
+    "Invalid": "Ngày sinh không hợp lệ"
+  },
+  "CoorUnit": {
+    "Required": "Đơn vị tọa độ không được để trống",
+    "Min": "Đơn vị tọa độ phải lớn hơn {number}",
+    "Max": "Đơn vị tọa độ phải nhỏ hơn {number}"
+  },
+  "Token": {
+    "Required": "Mã xác nhận không hợp lệ"
+  }
+}
