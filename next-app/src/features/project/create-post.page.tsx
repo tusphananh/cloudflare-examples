@@ -3,13 +3,12 @@
 import { Button } from '@/components/ui/button';
 
 import Loading from '@/components/loading/loading';
-import { getConfig } from '@/config';
+import { axiosGateWay } from '@/lib/axios-gateway';
+import { useAuth } from '@clerk/nextjs';
 import { useMutation } from '@tanstack/react-query';
-import axios from 'axios';
+import { useRouter } from 'next/navigation';
 import { useForm } from 'react-hook-form';
 import CreatePostForm from './create-post.form';
-
-const config = getConfig();
 
 export function CreatePostPage() {
   const methods = useForm({
@@ -19,15 +18,35 @@ export function CreatePostPage() {
     },
   });
 
+  const auth = useAuth();
+
+  const router = useRouter();
+
   const mutation = useMutation({
-    mutationFn: (post: any) => {
-      return axios.post(config.apiGateWayUrl + '/api/post', {
-        value: {
-          ...post,
+    onSuccess({ data }: any) {
+      if (data?.id) {
+        router.push(`post/${data.id}`);
+      }
+    },
+    mutationFn: async (post: any) => {
+      const token = await auth.getToken();
+
+      return axiosGateWay.post(
+        '/post',
+        {
+          value: {
+            ...post,
+          },
         },
-      });
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        },
+      );
     },
   });
+
   const onSubmit = () => {
     const { title, content } = methods.getValues();
     mutation.mutate({

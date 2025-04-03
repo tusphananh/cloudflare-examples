@@ -1,3 +1,4 @@
+import { createClerkClient, verifyToken } from '@clerk/backend';
 import { DurableObject } from 'cloudflare:workers';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -15,9 +16,7 @@ interface IPayload {
 
 interface ISendPayload {
 	id: string;
-	user: {
-		id: string;
-	};
+	user: any;
 	message: string;
 	type: 'message' | 'loadmore';
 	timestamp: string;
@@ -89,10 +88,25 @@ export class MyDurableObject extends DurableObject<Env> {
 	// communications, but we started with HTTP for its familiarity.
 	async fetch(request: Request) {
 		let url = new URL(request.url);
-		const userId = url.searchParams.get('userId');
+
+		const auth = url.searchParams.get('auth');
+		if (!auth) {
+			return new Response('Unauthorized', { status: 401 });
+		}
+		const tokenPayload = await verifyToken(auth, {
+			secretKey: this.env.CLERK_SECRET_KEY,
+		});
+
+		const { id, firstName, lastName, imageUrl } = await createClerkClient({
+			secretKey: this.env.CLERK_SECRET_KEY,
+		}).users.getUser(tokenPayload.sub);
+
+		const userId = id;
+
 		if (!userId) {
 			return new Response('Not found', { status: 404 });
 		}
+
 		switch (url.pathname) {
 			case '/websocket': {
 				// The request is to `/api/room/<name>/websocket`. A client is trying to establish a new
@@ -104,6 +118,10 @@ export class MyDurableObject extends DurableObject<Env> {
 				// Get the client's IP address for use with the rate limiter.
 				let ip = request.headers.get('CF-Connecting-IP');
 
+				if (!ip) {
+					return new Response('Bad Request', { status: 403 });
+				}
+
 				// To accept the WebSocket request, we create a WebSocketPair (which is like a socketpair,
 				// i.e. two WebSockets that talk to each other), we return one end of the pair in the
 				// response, and we operate on the other end. Note that this API is not part of the
@@ -112,7 +130,12 @@ export class MyDurableObject extends DurableObject<Env> {
 				let pair = new WebSocketPair();
 
 				// We're going to take pair[1] as our end, and return pair[0] to the client.
-				await this.handleSession(pair[1], userId);
+				await this.handleSession(pair[1], {
+					id,
+					firstName,
+					lastName,
+					imageUrl,
+				});
 
 				// Now we return the other end of the pair to the client.
 				return new Response(null, { status: 101, webSocket: pair[0] });
@@ -124,7 +147,7 @@ export class MyDurableObject extends DurableObject<Env> {
 	}
 
 	// handleSession() implements our WebSocket-based chat protocol.
-	async handleSession(webSocket: WebSocket, userId: string) {
+	async handleSession(webSocket: WebSocket, user: any) {
 		// Accept our end of the WebSocket. This tells the runtime that we'll be terminating the
 		// WebSocket in JavaScript, not sending it elsewhere.
 		this.ctx.acceptWebSocket(webSocket);
@@ -136,13 +159,6 @@ export class MyDurableObject extends DurableObject<Env> {
 		});
 		this.sessions.set(webSocket, session);
 
-		// Queue "join" messages for all online users, to populate the client's roster.
-		for (let otherSession of this.sessions.values()) {
-			if (otherSession.id) {
-				session.blockedMessages.push(JSON.stringify({ joined: otherSession.id }));
-			}
-		}
-
 		// Load the last 100 messages from the chat history stored on disk, and send them to the
 		// client.
 		let storage = await this.storage.list({ reverse: true, limit: LIMIT_MESSAGES_LOAD });
@@ -153,29 +169,21 @@ export class MyDurableObject extends DurableObject<Env> {
 			session.blockedMessages.push(value);
 		});
 
-		this.addToSession(webSocket, userId);
+		this.addToSession(webSocket, user);
 	}
 
-	addToSession(webSocket: WebSocket, userId: string) {
+	addToSession(webSocket: WebSocket, user: any) {
 		let session = this.sessions.get(webSocket);
 
-		if (!session.id) {
+		if (!session.user?.id) {
 			// The first message the client sends is the user info message with their name. Save it
 			// into their session object.
-			session.id = '' + (userId || 'anonymous');
+			session.user = user;
 			// attach name to the webSocket so it survives hibernation
 			webSocket.serializeAttachment({
 				...webSocket.deserializeAttachment(),
-				name: session.id,
+				user: session.user,
 			});
-
-			// Don't let people use ridiculously long names. (This is also enforced on the client,
-			// so if they get here they are not using the intended client.)
-			if (session.id.length > 32) {
-				webSocket.send(JSON.stringify({ error: 'Name too long.' }));
-				webSocket.close(1009, 'Name too long.');
-				return;
-			}
 
 			// Deliver all the messages we queued up since the user connected.
 			session.blockedMessages.forEach((queued: any) => {
@@ -204,11 +212,6 @@ export class MyDurableObject extends DurableObject<Env> {
 			// I guess we'll use JSON.
 			let data: IPayload = JSON.parse(msg);
 
-			if (!data.user.id) {
-				webSocket.send(JSON.stringify({ error: 'Missing user id.' }));
-				webSocket.close(1009, 'Missing user id.');
-			}
-
 			if (data.type === 'loadmore') {
 				// Load the last 100 messages from the chat history stored on disk, and send them to the
 				// client.
@@ -226,13 +229,6 @@ export class MyDurableObject extends DurableObject<Env> {
 				return;
 			}
 
-			// Block people from sending overly long messages. This is also enforced on the client,
-			// so to trigger this the user must be bypassing the client code.
-			if (data.message.length > 256) {
-				webSocket.send(JSON.stringify({ error: 'Message too long.' }));
-				return;
-			}
-
 			// Add timestamp. Here's where this.lastTimestamp comes in -- if we receive a bunch of
 			// messages at the same time (or if the clock somehow goes backwards????), we'll assign
 			// them sequential timestamps, so at least the ordering is maintained.
@@ -246,7 +242,7 @@ export class MyDurableObject extends DurableObject<Env> {
 				message: data.message,
 				type: 'message',
 				timestamp: new Date(timestamp).toISOString(),
-				user: data.user,
+				user: session.user,
 			};
 			let dataStr = JSON.stringify(sendPayload);
 			this.storage.put(id, dataStr);
@@ -265,9 +261,6 @@ export class MyDurableObject extends DurableObject<Env> {
 		let session = this.sessions.get(webSocket) || {};
 		session.quit = true;
 		this.sessions.delete(webSocket);
-		if (session.id) {
-			this.broadcast({ quit: session.id });
-		}
 	}
 
 	async webSocketClose(webSocket: WebSocket) {
@@ -288,7 +281,7 @@ export class MyDurableObject extends DurableObject<Env> {
 		// Iterate over all the sessions sending them messages.
 		let quitters: any = [];
 		this.sessions.forEach((session, webSocket) => {
-			if (session.id) {
+			if (session.user?.id) {
 				try {
 					webSocket.send(message);
 				} catch (err) {
@@ -302,12 +295,6 @@ export class MyDurableObject extends DurableObject<Env> {
 				// This session hasn't sent the initial user info message yet, so we're not sending them
 				// messages yet (no secret lurking!). Queue the message to be sent later.
 				session.blockedMessages.push(message);
-			}
-		});
-
-		quitters.forEach((quitter: any) => {
-			if (quitter.id) {
-				this.broadcast({ quit: quitter.id });
 			}
 		});
 	}
@@ -329,12 +316,11 @@ export default {
 
 		let url = new URL(request.url);
 
-		console.log(url);
-		const chatId = url.searchParams.get('chat');
-		if (!chatId) {
+		const postId = url.searchParams.get('post');
+		if (!postId) {
 			return new Response('Not found', { status: 404 });
 		}
-		const id: DurableObjectId = env.MY_DURABLE_OBJECT.idFromName(chatId);
+		const id: DurableObjectId = env.MY_DURABLE_OBJECT.idFromName(postId);
 
 		// Create a stub to open a communication channel with the Durable
 		// Object instance.

@@ -1,6 +1,6 @@
 import { AppRoutes } from '@/constants';
 import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
-import { Bell, ChartNoAxesGantt, Home, Plus, User } from 'lucide-react';
+import { Home, Plus, User } from 'lucide-react';
 
 export default function BottomNavBar() {
   const items = [
@@ -10,24 +10,14 @@ export default function BottomNavBar() {
       link: AppRoutes.HOME,
     },
     {
-      name: 'Posts',
-      icon: <ChartNoAxesGantt />,
-      link: AppRoutes.POSTS,
-    },
-    {
       name: 'Create',
       icon: <Plus />,
       link: AppRoutes.CREATE,
     },
     {
-      name: 'Notifications',
-      icon: <Bell />,
-      link: AppRoutes.NOTIFICATIONS,
-    },
-    {
       name: 'Account',
       icon: (
-        <div key="account">
+        <div key="account" className="flex">
           <SignedOut>
             <SignInButton>
               <User />

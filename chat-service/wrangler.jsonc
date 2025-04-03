@@ -4,14 +4,12 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "durable-object",
+	"name": "chat-service",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-03-27",
 	"migrations": [
 		{
-			"new_sqlite_classes": [
-				"MyDurableObject"
-			],
+			"new_sqlite_classes": ["MyDurableObject"],
 			"tag": "v1"
 		}
 	],
